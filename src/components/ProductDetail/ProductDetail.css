@@ -1,0 +1,8 @@
+.productDetail-container{
+    display: block;
+    justify-content: center;
+    margin: 50px 100px;
+}
+.productDetail-container h1{
+    text-align: center;
+}

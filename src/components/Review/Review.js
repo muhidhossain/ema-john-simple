@@ -20,7 +20,7 @@ const Review = () => {
         //cart
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('http://localhost:3000/getProductsByKey', {
+        fetch('https://calm-woodland-38346.herokuapp.com/getProductsByKey', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -18,6 +18,7 @@ const Shipment = () => {
     const onSubmit = data => {
         setShipInfo(data);
     }
+    console.log(shipInfo)
 
     const handlePlaceOrder = (payment) => {
         const savedCart = getDatabaseCart();
@@ -27,7 +28,7 @@ const Shipment = () => {
             shipment: shipInfo,
             payment: payment
         };
-        fetch('http://localhost:3000/placeOrder', {
+        fetch('https://calm-woodland-38346.herokuapp.com/placeOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
